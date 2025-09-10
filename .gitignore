@@ -8,4 +8,4 @@
 /dataSources.local.xml
 
 application-local.yml
-/target
+/target/
