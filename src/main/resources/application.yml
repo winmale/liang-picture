@@ -2,6 +2,9 @@ server:
   port: 8123
   servlet:
     context-path: /api
+    session:
+      cookie:
+        max-age: 2592000
 spring:
   # 开放更大的文件上传体积
   servlet:
@@ -23,6 +26,9 @@ spring:
     url: jdbc:mysql://localhost:3306/liang_picture
     username: root
     password: 123456
+  session:
+    store-type: redis
+    timeout: 2592000
 mybatis-plus:
   configuration:
     map-underscore-to-camel-case: false
